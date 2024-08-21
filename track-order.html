@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Your Order - Luxu D'ouest</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="index.html#product">Shop</a></li>
+<li><a href="index.html#contact">Contact</a></li>
+<li><a href="index.html#faq">FAQs</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section class="track-order">
+<h1>Track Your Order</h1>
+<p>Thank you for shopping with Luxu D'ouest! You can track the status of your order here.</p>
+<h2>How to Track Your Order</h2>
+<p>To track your order, please follow these steps:</p>
+<ol>
+<li>Find order number in the confirmation email you received after placing your order.</li>
+<li>Enter order number and email address you used to place the order in the form below.</li>
+<li>Click on "Track Order" button to see the status of your shipment.</li>
+</ol>
+<form id="trackOrderForm" action="track-order-results.html" method="get">
+<label for="orderNumber">Order Number:</label>
+<input type="text" id="orderNumber" name="orderNumber" required>
+<label for="email">Email Address:</label>
+<input type="email" id="email" name="email" required>
+<button type="submit">Track Order</button>
+</form>
+<h2>Need Help?</h2>
+<p>If you have any questions or need further assistance, please contact our customer service team:</p>
+<ul>
+<li>Email: <a href="mailto:support@luxudouest.com">support@luxudouest.com</a></li>
+</ul>
+</section>
+</main>
+<footer>
+<p>&copy; 2024 Luxu D'ouest. All rights reserved.</p>
+</footer>
+</body>
+</html>

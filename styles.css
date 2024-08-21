@@ -1,0 +1,373 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Intro Section Styles */
+.intro h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: 'Playfair Display', serif;
+    margin: 2rem 0;
+}
+
+/* Product Grid Styles */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product {
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.product p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* FAQ Section Styles */
+.FAQS h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    margin-top: 2rem;
+}
+
+.FAQS ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.FAQS ul li {
+    margin: 1rem 0;
+}
+
+/* Track Order Section Styles */
+.track-order {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.track-order h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.track-order p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.track-order form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.track-order label {
+    font-size: 16px;
+}
+
+.track-order input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.track-order button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.track-order button:hover {
+    background-color: #555;
+}
+
+/* Shipping Time Section Styles */
+.shipping-time {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shipping-time h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.shipping-time p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.shipping-time h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.shipping-time ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.shipping-time ul li {
+    margin-bottom: 10px;
+}
+
+/* Return Policy Section Styles */
+.return-policy {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.return-policy h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.return-policy p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.return-policy h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.return-policy ul,
+.return-policy ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.return-policy ul li,
+.return-policy ol li {
+    margin-bottom: 10px;
+}
+
+/* Shopping Bag Section Styles */
+.shopping-bag {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-bag h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Bag Items Table Styles */
+.bag-items {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.bag-items th,
+.bag-items td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.bag-items th {
+    background-color: #f2f2f2;
+}
+
+.bag-items img {
+    width: 50px;
+    height: 50px;
+}
+
+.bag-items input[type="number"] {
+    width: 60px;
+}
+
+/* Bag Summary Styles */
+.bag-summary {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.bag-summary h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Checkout Button Styles */
+.checkout-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.checkout-button:hover {
+    background-color: #555;
+}
+
+/* Remove Item Button Styles */
+.remove-item {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.remove-item:hover {
+    background-color: darkred;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxu D'ouest</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<p>Luxu d'ouest</p>
+<nav>
+<ul>
+<li><a href="">Home</a></li>
+<li><a href="#product">Shop</a></li>
+<li><a href="#contact">Contact</a></li>
+ <li><a href="checkout.html">Bag</a></li>
+<li><a href="#contact">FAQS</a></li>
+</ul>
+</nav>
+<p>Experience unparalleled elegance</p>
+</header>
+<main>
+<section class="intro">
+<h2>Massive savings during our peak sales season!</h2>
+</section>
+<section class="products-grid">
+<div class="product">
+<li>
+<img src='https://cdn.shopify.com/s/files/1/0057/7408/2148/products/GREYCENTERLOGO.jpg?v=1648059778' alt= "grey hoodie">
+<h2>Gallery-Dept Grey Hoodie</h2>
+<p>£500</p>
+<button type="button" class="center-button" onclick="addToCart('Gallery-Dept Grey Hoodie', 500, 'https://cdn.shopify.com/s/files/1/0057/7408/2148/products/GREYCENTERLOGO.jpg?v=1648059778')">Add to shopping bag</button>
+</div>
+<div class="product">
+<img src='https://cdn.whatsonthestar.com/uploads/1688163121766.png' alt='brown t-Shirt'>
+<h2>Gallery-Dept Art That Kills Brown</h2>
+<p>£400</p>
+<button type="button" class="center-button" onclick="addToCart('Gallery-Dept Art That Kills Brown', 400, 'https://cdn.whatsonthestar.com/uploads/1688163121766.png')">Add to shopping bag</button>
+</div>
+<div class="product">
+<img src="https://images.stockx.com/images/Migos-x-Gallery-Dept-For-Culture-III-Three-Skulls-T-Shirt-Washed-Black-2.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1623716555" alt='washed black t-Shirt'>
+<h2>Gallery-Dept t-Shirt Washed Black</h2>
+<p>£400</p>
+<button type="button" class="center-button" onclick="addToCart('Gallery-Dept t-Shirt Washed Black', 400, 'https://images.stockx.com/images/Migos-x-Gallery-Dept-For-Culture-III-Three-Skulls-T-Shirt-Washed-Black-2.jpg?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&dpr=2&trim=color&updated_at=1623716555')">Add to shopping bag</button>
+</div>
+<div class="product">
+<img src='https://thereport.blog/wp-content/uploads/2023/12/Gallery-Dept-Long-Beach-Black-Print-Hoodie-1.jpg'alt='black hoodie'>
+<h2>Gallery-dept Black Print Hoodie</h2>
+<p>£500</p>
+<button type="button" class="center-button" onclick="addToCart('Gallery-dept Black Print Hoodie', 500, 'https://thereport.blog/wp-content/uploads/2023/12/Gallery-Dept-Long-Beach-Black-Print-Hoodie-1.jpg')">Add to shopping bag</button>
+</div>
+</section>
+<section class="products-grid">
+<div class="product">
+<img src="https://cdna.lystit.com/1040/1300/n/photos/harveynichols/e82688c7/gallery-dept-Denim-Indiana-Blue-Distressed-Flared-leg-Jeans.jpeg" alt='blue jean'>
+<h2>Gallery-Dept Blue Flare Jean</h2>
+<p>£800</p>
+<button type="button" class="center-button" onclick="addToCart('Gallery-Dept Blue Flare Jean', 800, 'https://www.ymeuniverse.com/images/68957/314607-5.jpg')">Add to shopping bag</button>
+</div>
+<div class="product">
+<img src="https://gallerydept.com/cdn/shop/files/MISC_BLACK-PAINTED-FLARE-SWEATPANT_GD-2131F_Front_1200x1200.jpg?v=1691190636" alt='black joggers'>
+<h2>Gallery-dept Black painted flare joggers</h2>
+<p>£950</p>
+ <button type="button" class="center-button" onclick="addToCart('Gallery-dept Black painted flare joggers', 950, 'https://gallerydept.com/cdn/shop/files/MISC_BLACK-PAINTED-FLARE-SWEATPANT_GD-2131F_Front_1200x1200.jpg?v=1691190636')">Add to shopping bag</button>
+</div>
+<div class="product">
+<img src="https://cdna.lystit.com/520/650/n/photos/gebnegozionline/7f7cf697/gallery-dept-Grey-Cotton-joggers.jpeg" alt='grey jpggers'>
+<h2>Gallery-dept Grey painted flare joggers </h2>
+<p>£950</p>
+<button type="button" class="center-button" onclick="addToCart('Gallery-dept Grey painted flare joggers', 950, 'https://cdna.lystit.com/520/650/n/photos/gebnegozionline/7f7cf697/gallery-dept-Grey-Cotton-joggers.jpeg')">Add to shopping bag</button>
+</div>
+<div class="product">
+<img src="https://cdna.lystit.com/1040/1300/n/photos/lvr/9fd89c28/gallery-dept-MarronBeige-Jean-La-Flare-Tan-Carpenter.jpeg"alt='brown capenter jeans'>
+<h2>Gallery-dept flare Brown Capenter Jean</h2>
+<p>£800</p>
+ <button type="button" class="center-button" onclick="addToCart('Gallery-dept flare Brown Carpenter Jean', 800, 'https://cdna.lystit.com/1040/1300/n/photos/lvr/9fd89c28/gallery-dept-MarronBeige-Jean-La-Flare-Tan-Carpenter.jpeg')">Add to shopping bag</button>
+</ul>
+</div>
+</section>
+</main>
+</body>
+<section id="contact">
+<h2><CENTER text-align>Contact Us</h2>
+<form id="contactForm" onsubmit="return validateForm()">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+<label for="message">Message:</label>
+<textarea id="message" name="message" required></textarea>
+<button type="submit">Submit</button>
+</form>
+</section>
+<section class="FAQS">
+<h2>FAQS</h2>
+<U>
+<CENTER text-align>
+<li><a href="track-order.html">Where can I track my order?</a></li>
+<li><a href="shipping-times.html">What are your shipping times?</a></li>
+ <li><a href="return-policy.html">What is your return policy?</a></li>
+</U>
+</section>
+<footer>
+<p>&copy; 2024 Luxu D'ouest. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

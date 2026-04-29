@@ -1,4 +1,4 @@
-name: Build and deploy Node.js app to Azure Web App
+name: Azure Deployment
 
 on:
   push:
@@ -9,9 +9,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      - name: 'Deploy to Azure Web App'
+      - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
           app-name: 'abdul-media-app'
